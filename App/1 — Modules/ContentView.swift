@@ -5,22 +5,20 @@
 //  Created by Rayan Waked on 6/14/25.
 //
 
+// MARK: - Import
 import SwiftUI
 
+// MARK: - View
 struct ContentView: View {
+    // MARK: - Variable
+    
+    // MARK: - Body
     var body: some View {
-        TabView {
-            Tab("Home", systemImage: "house") {
-                HomeView()
-            }
-            Tab("Settings", systemImage: "gearshape") {
-                SettingsView()
-            }
-        }
-        .tint(Color.accentColor)
+        Text("Hi")
     }
 }
 
+// MARK: - Preview
 #Preview {
     ContentView()
 }

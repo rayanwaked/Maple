@@ -6,6 +6,13 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		B938A5562E0665BE00502FB3 /* MapleInterface in Frameworks */ = {isa = PBXBuildFile; productRef = B938A5552E0665BE00502FB3 /* MapleInterface */; };
+		B938A55A2E0665D400502FB3 /* MapleModel in Frameworks */ = {isa = PBXBuildFile; productRef = B938A5592E0665D400502FB3 /* MapleModel */; };
+		B9403DA12E064E900026A3D5 /* ATMacro in Frameworks */ = {isa = PBXBuildFile; productRef = B9403DA02E064E900026A3D5 /* ATMacro */; };
+		B9403DA32E064E900026A3D5 /* ATProtoKit in Frameworks */ = {isa = PBXBuildFile; productRef = B9403DA22E064E900026A3D5 /* ATProtoKit */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
 		B9DD25052DFE0CB1003E609F /* Maple.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Maple.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -14,7 +21,9 @@
 		B9D0F20B2E00DC3400D56334 /* Exceptions for "App" folder in "Maple" target */ = {
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
-				"3 — Resources/Info.plist",
+				"2 — Components/Users/rayanwaked/Documents/Documents/Maple/App/2 — Components/MapleInterface",
+				"2 — Components/Users/rayanwaked/Documents/Documents/Maple/App/2 — Components/MapleModel",
+				"3 — Resources/Configurations.plist",
 			);
 			target = B9DD25042DFE0CB1003E609F /* Maple */;
 		};
@@ -36,6 +45,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B9403DA12E064E900026A3D5 /* ATMacro in Frameworks */,
+				B9403DA32E064E900026A3D5 /* ATProtoKit in Frameworks */,
+				B938A55A2E0665D400502FB3 /* MapleModel in Frameworks */,
+				B938A5562E0665BE00502FB3 /* MapleInterface in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,6 +91,10 @@
 			);
 			name = Maple;
 			packageProductDependencies = (
+				B9403DA02E064E900026A3D5 /* ATMacro */,
+				B9403DA22E064E900026A3D5 /* ATProtoKit */,
+				B938A5552E0665BE00502FB3 /* MapleInterface */,
+				B938A5592E0665D400502FB3 /* MapleModel */,
 			);
 			productName = Maple;
 			productReference = B9DD25052DFE0CB1003E609F /* Maple.app */;
@@ -107,6 +124,11 @@
 			);
 			mainGroup = B9DD24FC2DFE0CB1003E609F;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				B9403D9F2E064E900026A3D5 /* XCRemoteSwiftPackageReference "ATProtoKit" */,
+				B938A5542E0665BE00502FB3 /* XCLocalSwiftPackageReference "MapleInterface" */,
+				B938A5582E0665D400502FB3 /* XCLocalSwiftPackageReference "MapleModel" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = B9DD25062DFE0CB1003E609F /* Products */;
 			projectDirPath = "";
@@ -197,6 +219,7 @@
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
@@ -254,6 +277,7 @@
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				VALIDATE_PRODUCT = YES;
 			};
@@ -266,11 +290,13 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = "App/3 — Resources/Entitlements.entitlements";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 1.0;
 				DEVELOPMENT_TEAM = 6R2E9P9EPV;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "App/3 — Resources/Info.plist";
+				INFOPLIST_FILE = "App/3 — Resources/Configurations.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = Maple;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.social-networking";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -305,11 +331,13 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = "App/3 — Resources/Entitlements.entitlements";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 1.0;
 				DEVELOPMENT_TEAM = 6R2E9P9EPV;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "App/3 — Resources/Info.plist";
+				INFOPLIST_FILE = "App/3 — Resources/Configurations.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = Maple;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.social-networking";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -359,6 +387,49 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCLocalSwiftPackageReference section */
+		B938A5542E0665BE00502FB3 /* XCLocalSwiftPackageReference "MapleInterface" */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = MapleInterface;
+		};
+		B938A5582E0665D400502FB3 /* XCLocalSwiftPackageReference "MapleModel" */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = MapleModel;
+		};
+/* End XCLocalSwiftPackageReference section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		B9403D9F2E064E900026A3D5 /* XCRemoteSwiftPackageReference "ATProtoKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/MasterJ93/ATProtoKit";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.29.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		B938A5552E0665BE00502FB3 /* MapleInterface */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = MapleInterface;
+		};
+		B938A5592E0665D400502FB3 /* MapleModel */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = MapleModel;
+		};
+		B9403DA02E064E900026A3D5 /* ATMacro */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B9403D9F2E064E900026A3D5 /* XCRemoteSwiftPackageReference "ATProtoKit" */;
+			productName = ATMacro;
+		};
+		B9403DA22E064E900026A3D5 /* ATProtoKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B9403D9F2E064E900026A3D5 /* XCRemoteSwiftPackageReference "ATProtoKit" */;
+			productName = ATProtoKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = B9DD24FD2DFE0CB1003E609F /* Project object */;
 }

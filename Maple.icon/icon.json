@@ -3,8 +3,8 @@
     {
       "value" : {
         "linear-gradient" : [
-          "display-p3:0.84645,0.50393,0.62192,1.00000",
-          "display-p3:0.48940,0.70167,0.94039,1.00000"
+          "display-p3:1.00000,0.79069,0.82704,1.00000",
+          "display-p3:0.94039,0.93093,0.66414,1.00000"
         ]
       }
     },
@@ -20,34 +20,34 @@
   ],
   "groups" : [
     {
-      "blend-mode" : "normal",
-      "blur-material" : 0.5,
       "layers" : [
         {
-          "blend-mode-specializations" : [
-            {
-              "appearance" : "dark",
-              "value" : "normal"
-            }
-          ],
-          "fill-specializations" : [
-            {
-              "appearance" : "dark",
-              "value" : "none"
-            }
-          ],
           "glass" : false,
-          "hidden" : false,
           "image-name" : "Maple.png",
           "name" : "Maple",
           "position" : {
-            "scale" : 0.87,
+            "scale" : 0.89,
             "translation-in-points" : [
-              -5.88705295362745,
-              72.83679069711799
+              -6.521842779592451,
+              68.02633944041037
             ]
           }
-        },
+        }
+      ],
+      "name" : "Icon",
+      "shadow" : {
+        "kind" : "neutral",
+        "opacity" : 0.5
+      },
+      "translucency" : {
+        "enabled" : true,
+        "value" : 0.5
+      }
+    },
+    {
+      "blend-mode" : "normal",
+      "blur-material" : 0.5,
+      "layers" : [
         {
           "blend-mode-specializations" : [
             {
@@ -83,15 +83,16 @@
           "image-name" : "Stars from Figma (1).png",
           "name" : "Stars",
           "position" : {
-            "scale" : 1,
+            "scale" : 1.5,
             "translation-in-points" : [
-              40.84375,
-              -117.6484375
+              -299.9917970542696,
+              -239.09997582949435
             ]
           }
         }
       ],
       "lighting" : "individual",
+      "name" : "Background",
       "shadow" : {
         "kind" : "neutral",
         "opacity" : 0.5
