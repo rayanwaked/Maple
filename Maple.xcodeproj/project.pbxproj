@@ -22,7 +22,6 @@
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
 				"2 — Components/Users/rayanwaked/Documents/Documents/Maple/App/2 — Components/MapleInterface",
-				"2 — Components/Users/rayanwaked/Documents/Documents/Maple/App/2 — Components/MapleModel",
 				"3 — Resources/Configurations.plist",
 			);
 			target = B9DD25042DFE0CB1003E609F /* Maple */;
