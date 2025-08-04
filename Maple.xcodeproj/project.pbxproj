@@ -7,10 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		B938A5562E0665BE00502FB3 /* MapleInterface in Frameworks */ = {isa = PBXBuildFile; productRef = B938A5552E0665BE00502FB3 /* MapleInterface */; };
-		B938A55A2E0665D400502FB3 /* MapleModel in Frameworks */ = {isa = PBXBuildFile; productRef = B938A5592E0665D400502FB3 /* MapleModel */; };
-		B9403DA12E064E900026A3D5 /* ATMacro in Frameworks */ = {isa = PBXBuildFile; productRef = B9403DA02E064E900026A3D5 /* ATMacro */; };
-		B9403DA32E064E900026A3D5 /* ATProtoKit in Frameworks */ = {isa = PBXBuildFile; productRef = B9403DA22E064E900026A3D5 /* ATProtoKit */; };
+		B90183C22E41160900900FE0 /* PostHog in Frameworks */ = {isa = PBXBuildFile; productRef = B90183C12E41160900900FE0 /* PostHog */; };
+		B996023D2E3C240300944B61 /* BezelKit in Frameworks */ = {isa = PBXBuildFile; productRef = B996023C2E3C240300944B61 /* BezelKit */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,8 +19,7 @@
 		B9D0F20B2E00DC3400D56334 /* Exceptions for "App" folder in "Maple" target */ = {
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
-				"2 — Components/Users/rayanwaked/Documents/Documents/Maple/App/2 — Components/MapleInterface",
-				"3 — Resources/Configurations.plist",
+				"2 Resources/Configurations.plist",
 			);
 			target = B9DD25042DFE0CB1003E609F /* Maple */;
 		};
@@ -44,10 +41,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B9403DA12E064E900026A3D5 /* ATMacro in Frameworks */,
-				B9403DA32E064E900026A3D5 /* ATProtoKit in Frameworks */,
-				B938A55A2E0665D400502FB3 /* MapleModel in Frameworks */,
-				B938A5562E0665BE00502FB3 /* MapleInterface in Frameworks */,
+				B996023D2E3C240300944B61 /* BezelKit in Frameworks */,
+				B90183C22E41160900900FE0 /* PostHog in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -90,10 +85,8 @@
 			);
 			name = Maple;
 			packageProductDependencies = (
-				B9403DA02E064E900026A3D5 /* ATMacro */,
-				B9403DA22E064E900026A3D5 /* ATProtoKit */,
-				B938A5552E0665BE00502FB3 /* MapleInterface */,
-				B938A5592E0665D400502FB3 /* MapleModel */,
+				B996023C2E3C240300944B61 /* BezelKit */,
+				B90183C12E41160900900FE0 /* PostHog */,
 			);
 			productName = Maple;
 			productReference = B9DD25052DFE0CB1003E609F /* Maple.app */;
@@ -124,9 +117,8 @@
 			mainGroup = B9DD24FC2DFE0CB1003E609F;
 			minimizedProjectReferenceProxies = 1;
 			packageReferences = (
-				B9403D9F2E064E900026A3D5 /* XCRemoteSwiftPackageReference "ATProtoKit" */,
-				B938A5542E0665BE00502FB3 /* XCLocalSwiftPackageReference "MapleInterface" */,
-				B938A5582E0665D400502FB3 /* XCLocalSwiftPackageReference "MapleModel" */,
+				B996023B2E3C240300944B61 /* XCRemoteSwiftPackageReference "BezelKit" */,
+				B90183C02E41160900900FE0 /* XCRemoteSwiftPackageReference "posthog-ios" */,
 			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = B9DD25062DFE0CB1003E609F /* Products */;
@@ -285,15 +277,17 @@
 		B9DD25112DFE0CB2003E609F /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_APPICON_NAME = Icons;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = "App/3 — Resources/Entitlements.entitlements";
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
+				CODE_SIGN_ENTITLEMENTS = "App/2 Resources/Entitlements.entitlements";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1.0;
+				CURRENT_PROJECT_VERSION = 0.0.1;
+				DEVELOPMENT_ASSET_PATHS = "\"App/2 Resources/Icons.icon\"";
 				DEVELOPMENT_TEAM = 6R2E9P9EPV;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "App/3 — Resources/Configurations.plist";
+				INFOPLIST_FILE = "App/2 Resources/Configurations.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = Maple;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.social-networking";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -302,12 +296,12 @@
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				INFOPLIST_KEY_UIUserInterfaceStyle = Light;
-				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 0.1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = waked.Maple;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRING_CATALOG_GENERATE_SYMBOLS = YES;
@@ -326,15 +320,17 @@
 		B9DD25122DFE0CB2003E609F /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_APPICON_NAME = Icons;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = "App/3 — Resources/Entitlements.entitlements";
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
+				CODE_SIGN_ENTITLEMENTS = "App/2 Resources/Entitlements.entitlements";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1.0;
+				CURRENT_PROJECT_VERSION = 0.0.1;
+				DEVELOPMENT_ASSET_PATHS = "\"App/2 Resources/Icons.icon\"";
 				DEVELOPMENT_TEAM = 6R2E9P9EPV;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "App/3 — Resources/Configurations.plist";
+				INFOPLIST_FILE = "App/2 Resources/Configurations.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = Maple;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.social-networking";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -343,12 +339,12 @@
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				INFOPLIST_KEY_UIUserInterfaceStyle = Light;
-				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 0.1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = waked.Maple;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRING_CATALOG_GENERATE_SYMBOLS = YES;
@@ -387,46 +383,35 @@
 		};
 /* End XCConfigurationList section */
 
-/* Begin XCLocalSwiftPackageReference section */
-		B938A5542E0665BE00502FB3 /* XCLocalSwiftPackageReference "MapleInterface" */ = {
-			isa = XCLocalSwiftPackageReference;
-			relativePath = MapleInterface;
-		};
-		B938A5582E0665D400502FB3 /* XCLocalSwiftPackageReference "MapleModel" */ = {
-			isa = XCLocalSwiftPackageReference;
-			relativePath = MapleModel;
-		};
-/* End XCLocalSwiftPackageReference section */
-
 /* Begin XCRemoteSwiftPackageReference section */
-		B9403D9F2E064E900026A3D5 /* XCRemoteSwiftPackageReference "ATProtoKit" */ = {
+		B90183C02E41160900900FE0 /* XCRemoteSwiftPackageReference "posthog-ios" */ = {
 			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/MasterJ93/ATProtoKit";
+			repositoryURL = "https://github.com/PostHog/posthog-ios";
 			requirement = {
 				kind = upToNextMajorVersion;
-				minimumVersion = 0.29.0;
+				minimumVersion = 3.30.0;
+			};
+		};
+		B996023B2E3C240300944B61 /* XCRemoteSwiftPackageReference "BezelKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/markbattistella/BezelKit";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.0.0;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		B938A5552E0665BE00502FB3 /* MapleInterface */ = {
+		B90183C12E41160900900FE0 /* PostHog */ = {
 			isa = XCSwiftPackageProductDependency;
-			productName = MapleInterface;
+			package = B90183C02E41160900900FE0 /* XCRemoteSwiftPackageReference "posthog-ios" */;
+			productName = PostHog;
 		};
-		B938A5592E0665D400502FB3 /* MapleModel */ = {
+		B996023C2E3C240300944B61 /* BezelKit */ = {
 			isa = XCSwiftPackageProductDependency;
-			productName = MapleModel;
-		};
-		B9403DA02E064E900026A3D5 /* ATMacro */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = B9403D9F2E064E900026A3D5 /* XCRemoteSwiftPackageReference "ATProtoKit" */;
-			productName = ATMacro;
-		};
-		B9403DA22E064E900026A3D5 /* ATProtoKit */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = B9403D9F2E064E900026A3D5 /* XCRemoteSwiftPackageReference "ATProtoKit" */;
-			productName = ATProtoKit;
+			package = B996023B2E3C240300944B61 /* XCRemoteSwiftPackageReference "BezelKit" */;
+			productName = BezelKit;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
